@@ -28,6 +28,7 @@ public class Main {
         System.out.println("-----------------");
         System.out.println("");
 
+
         // Vergleiche heute mit in 2 Wochen
         LocalDate start = LocalDate.now();
         LocalDate end = twoWeeksAhead;
@@ -39,6 +40,7 @@ public class Main {
         } else {
             System.out.println("Das Random Datum liegt " + daysBetween + " Tage nach dem " + start);
         }
+
 
         System.out.println("-----------------");
         System.out.println("");
@@ -56,7 +58,5 @@ public class Main {
         } else {
             System.out.println("Das Datum " + end2 + " liegt " + daysBetween2 + " Tage nach dem " + start);
         }
-
-
     }
 }
