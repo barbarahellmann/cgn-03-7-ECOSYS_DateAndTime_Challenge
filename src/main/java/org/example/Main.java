@@ -8,8 +8,10 @@ import java.time.temporal.ChronoUnit;
 public class Main {
     public static void main(String[] args) {
 
-        // Aktuelle Zeit
+       // Formatierung
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE dd.MM.yyyy");
+
+        // Aktuelle Zeit
 
         String formattedToday = LocalDate.now().format(formatter);
         System.out.println("Aktuelle Zeit: " + formattedToday);
@@ -21,7 +23,7 @@ public class Main {
         String formattedTwoWeeksAhead = twoWeeksAhead.format(formatter);
         System.out.println("In zwei Wochen: " + formattedTwoWeeksAhead);
 
-
+        // Vergleiche heute mit in 2 Wochen
         LocalDate start = LocalDate.now();
         LocalDate end = twoWeeksAhead;
 
@@ -32,6 +34,6 @@ public class Main {
         } else {
             System.out.println("Datum liegt " + daysBetween + " Tage nach dem " + start);
         }
-        
+
     }
 }
