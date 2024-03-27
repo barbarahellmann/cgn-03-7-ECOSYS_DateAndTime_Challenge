@@ -35,9 +35,9 @@ public class Main {
         long daysBetween = ChronoUnit.DAYS.between(start, end);
 
         if(start.isBefore(end)) {
-        System.out.println("Datum liegt " + daysBetween + " Tage vor dem " + start);
+        System.out.println("Das Random Datum liegt " + daysBetween + " Tage vor dem " + start);
         } else {
-            System.out.println("Datum liegt " + daysBetween + " Tage nach dem " + start);
+            System.out.println("Das Random Datum liegt " + daysBetween + " Tage nach dem " + start);
         }
 
         System.out.println("-----------------");
